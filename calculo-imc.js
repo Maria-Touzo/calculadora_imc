@@ -4,6 +4,6 @@
 // Fazer os cálculos
 
 function calcularIMC(){
-    const peso = 
+   
 };
 
