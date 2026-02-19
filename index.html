@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Conteúdo principal -->
+    <main class="calculator">
+
+        <!-- título do APP -->
+        <header class="calculaor__header">
+            <h1 class="calculator__title">Calculadora de IMC</h1>
+        </header>
+
+        <!-- Seção do formulário -->
+        <section class="calculator__form-section">
+            <form  class="calculator__form" id="imcForm">
+                <div class="calculator__form-group">
+                    <label for="weigth" class="calculator__label">Peso (Kg):</label>
+                    <input type="number" id="weigth" class="calculator__input" placeholder="Ex.: 70" required>
+                </div>
+
+                <div class="calculator__form-group">
+                    <label for="heigth" class="calculator__label">Altura (m)²: </label>
+                    <input type="number" id="heigth" class="calculator__input" placeholder="Ex.: 1.75" step="0.01" required>
+                </div>
+                
+                <div class="calculator__buttons">
+                    <button type="button" class="calculator__button calculator__buton--calculate" >
+                        onclick="calcularIMC()> Calcular </button>
+                    <button type="button" class="calculater__button calculator__button--clear">
+                        onclick="limparCampos()">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- mensagem para o usuário -->
+        <section class="calculator__result-section" id="resultSection">
+            <h2 class="calculator__result-title">Resultado: </h2>
+            <p class="calculator__result-text" id="resultText">Preencha o campos e clique em calcular</p>
+        </section>
+    </main>
+
+    <script src="./calculo-imc.js">
+
+    </script>
+
+</body>
+</html>
